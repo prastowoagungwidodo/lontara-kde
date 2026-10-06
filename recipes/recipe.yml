@@ -66,6 +66,12 @@ modules:
         - openssl-devel
         - podman
         - podman-compose
+        - plasma-oxygen
+        - oxygen-icon-theme
+        - oxygen-sounds
+        - oxygen-icon-theme
+        - oxygen-mono-fonts
+        - oxygen-gtk2
     replace:
       - from-repo: fedora-multimedia
         skip-unavailable: true
