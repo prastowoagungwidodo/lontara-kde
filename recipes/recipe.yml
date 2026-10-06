@@ -66,6 +66,8 @@ modules:
         - openssl-devel
         - podman
         - podman-compose
+        - python3-pip
+        - cmake
         - plasma-oxygen
         - oxygen-icon-theme
         - oxygen-sounds
@@ -124,10 +126,18 @@ modules:
     fonts:
       nerd-fonts:
         - JetBrainsMono
+        - NerdFontsSymbolsOnly
   - type: systemd
     system:
       enabled:
         - usbguard.service
+      disabled:
+        - sshd.service
+        - cups.service
+        - cups.socket
+        - cups-browsed.service
+        - avahi-daemon.service
+        - avahi-daemon.socket
     user:
       enabled:
         - usbguard-notifier.service
