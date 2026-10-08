@@ -74,6 +74,7 @@ modules:
         - oxygen-icon-theme
         - oxygen-mono-fonts
         - oxygen-gtk2
+        - webkit2gtk4.1
     replace:
       - from-repo: fedora-multimedia
         skip-unavailable: true
